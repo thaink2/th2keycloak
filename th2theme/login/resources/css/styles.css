@@ -1,6 +1,3 @@
-/* login/resources/css/styles.css */
-
-/* Override Keycloak primary colors */
 :root {
     --pf-global--primary-color--100: var(#013DFF);
     --pf-global--primary-color--200: var(--pf-global--palette--blue-200);
