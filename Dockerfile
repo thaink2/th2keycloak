@@ -11,6 +11,6 @@ COPY th2theme /opt/bitnami/keycloak/themes/th2theme
 
 RUN chown -R 1001:root /opt/bitnami/keycloak/themes/th2theme
 
-USER 1001
+# USER 1001
 
 
