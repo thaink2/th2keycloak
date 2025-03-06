@@ -1,12 +1,8 @@
 :root {
     --pf-global--primary-color--100: #013DFF;
-    --pf-global--primary-color--200: var(--pf-global--palette--blue-200);
+    --pf-global--primary-color--200: #335FFF;
 }
 
 .login-pf-page {
-    background-size: 50% 50%;
-}
-
-.login-pf {
     background-size: 50% 50%;
 }
