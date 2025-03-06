@@ -1,10 +1,9 @@
 name: Build and Push Keycloak Image
 
 on:
-  push:
-    branches:
-      - main
-      - "logo-fixing"
+  release:
+    types: [published]
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
@@ -21,8 +20,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/th2-keycloak:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/th2-keycloak:${{ github.event.release.tag_name }} .
 
       - name: Push Docker Image to Docker Hub
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/th2-keycloak:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/th2-keycloak:${{ github.event.release.tag_name }}
