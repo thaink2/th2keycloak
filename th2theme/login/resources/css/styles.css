@@ -3,6 +3,10 @@
     --pf-global--primary-color--200: var(--pf-global--palette--blue-200);
 }
 
+.login-pf-page {
+    background-size: auto;
+}
+
 .login-pf {
-    background-size: cover;
+    background-size: auto;
 }
