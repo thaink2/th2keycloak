@@ -3,8 +3,8 @@ name: Build and Push Keycloak Image
 on:
   push:
     branches:
-      - main  
-
+      - main
+      - "logo-fixing"
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
