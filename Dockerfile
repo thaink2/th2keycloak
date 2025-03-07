@@ -1,4 +1,4 @@
-FROM bitnami/keycloak:nightly
+FROM bitnami/keycloak:latest
 
 
 USER root
